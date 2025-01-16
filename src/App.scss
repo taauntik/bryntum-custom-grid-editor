@@ -1,0 +1,34 @@
+// import bryntum theme
+@import "@bryntum/grid/grid.stockholm.css";
+
+// Giving our grid some height
+#root {
+  height: 100vh;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.b-popup {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: black;
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.color-options {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-box:hover {
+  border: 2px solid black; /* Highlight on hover */
+}
