@@ -11,7 +11,8 @@ const gridProps = {
             text  : 'Color',
             field : 'color',
             flex  : 1,
-            editor : (ref) => <ColorEditor ref={ref} />,
+            cellEditor : { floating : true, align : 't40-t0', width: 500, height: 500, updateSize : () => {}},
+            editor     : (ref) => <ColorEditor ref={ref} />,
             // managedCellEditing : false,
             renderer({ cellElement, value }) {
                 // set the color based on the value (e.g. "Red" should be red)
