@@ -38,8 +38,9 @@ export default class ColorEditor extends Component {
                         <button key={color}
                         className="color-box"
                         tabIndex={-1}
-                        onClick={() => {
-                            this.setValue(color)
+                        onClick={async (e) => {
+                            await this.setValue(color);
+                            e.target.blur();
                         }}
                         style={{
                             backgroundColor: color,

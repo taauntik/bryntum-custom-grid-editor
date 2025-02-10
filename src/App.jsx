@@ -8,10 +8,10 @@ function App() {
 
     return (
         <>
-        <BryntumGrid
-        ref={gridRef}
-        {...gridProps}
-        />
+            <BryntumGrid
+                ref={gridRef}
+                {...gridProps}
+            />
         </>
     );
 }
